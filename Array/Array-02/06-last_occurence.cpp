@@ -2,8 +2,7 @@
 #include <iostream>
 #include <vector>
 using namespace std;
-int main()
-{
+int main() {
     vector<int> v;
     v.push_back(1);
     v.push_back(2);
@@ -21,10 +20,8 @@ int main()
     //     if (v[i] == x)
     //         idx = i;
     // }
-    for (int i = v.size() - 1; i >= 0; i--)
-    {
-        if (v[i] == x)
-        {
+    for (int i = v.size() - 1; i >= 0; i--) {
+        if (v[i] == x) {
             idx = i;
             break;
         }
