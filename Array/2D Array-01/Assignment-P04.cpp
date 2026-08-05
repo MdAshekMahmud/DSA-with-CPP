@@ -7,14 +7,16 @@ using namespace std;
 
 void displayMiddle(int arr[][100], int n) {
     int mid = n / 2;
-
-    // Display middle column
-    for (int i = 0; i < n; i++)
-        printf("%d\n", arr[i][mid]);
-
-    // Display middle row
-    for (int j = 0; j < n; j++)
-        printf("%d ", arr[mid][j]);
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < n; j++) {
+            if (i == mid || j == mid) {
+                cout << arr[i][j] << " ";
+            } else {
+                cout << "  ";
+            }
+        }
+        cout << endl;
+    }
 }
 
 int main() {
