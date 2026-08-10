@@ -3,7 +3,27 @@
 using namespace std;
 
 int main() {
-    int matrix[3][3] = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
+    int n, m;
+    cout << "Enter row and columns: ";
+    cin >> n >> m;
+    int matrix[n][m];
+
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < m; j++) {
+            cin >> matrix[i][j];
+        }
+    }
+
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < m; j++) {
+            if (i == j || j == n - i - 1) {
+                cout << setw(4) << matrix[i][j];
+            } else {
+                cout << setw(4) << "";
+            }
+        }
+        cout << endl;
+    }
 
     return 0;
 }
