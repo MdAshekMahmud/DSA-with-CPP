@@ -1,20 +1,29 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// O(log(m * n)) time complexity.
 class Solution {
   public:
     bool searchMatrix(vector<vector<int>> &matrix, int target) {
-        int row = matrix.size();
-        int col = matrix[0].size();
+        int m = matrix.size();
+        int n = matrix[0].size();
 
-        int i = 0, j = col - 1;
-        while (j >= 0 && i < row) {
-            if (matrix[i][j] == target)
+        int low = 0, high = (m * n) - 1;
+        while (low <= high) {
+            int mid = low + (high - low) / 2;
+
+            int row = mid / n;
+            int col = mid % n;
+
+            int mid_element = matrix[row][col];
+
+            if (mid_element == target) {
                 return true;
-            else if (matrix[i][j] > target)
-                j--;
-            else
-                i++;
+            } else if (mid_element < target) {
+                low = mid + 1;
+            } else {
+                high = mid - 1;
+            }
         }
 
         return false;
