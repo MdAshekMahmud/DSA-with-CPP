@@ -4,14 +4,12 @@
 #include <string>
 using namespace std;
 
-int main()
-{
+int main() {
     string s;
     getline(cin, s);
     if (s.size() % 2 != 0)
         cout << "Invalid input." << endl;
-    else
-    {
+    else {
         reverse(s.begin() + s.length() / 2, s.end());
         cout << s << endl;
     }
