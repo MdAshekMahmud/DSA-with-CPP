@@ -11,6 +11,7 @@ This repository is organized by **DSA topic and lecture**, making it easy to tra
 - Fundamentals
 - Arrays
 - Strings
+- Binary Search
 - Linked Lists
 - Stack
 - Maps & Sets
@@ -123,9 +124,10 @@ The main objectives of this repository are to:
 
 | Topic               | Status         |
 | ------------------- | -------------- |
-| Fundamentals        | 🔄 In Progress |
-| Arrays              | 🔄 In Progress |
-| Strings             | 🔄 In Progress |
+| Fundamentals        | ✅ Completed   |
+| Arrays              | ✅ Completed   |
+| Strings             | ✅ Completed   |
+| Binary Search       | ✅ Completed   |
 | Linked Lists        | 🔄 In Progress |
 | Stack               | 🔄 In Progress |
 | Maps & Sets         | 🔄 In Progress |
